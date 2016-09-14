@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 var fs = require('fs')
-fs.readFile('howto.html', 'utf8', function (err,data) {
+fs.readFile('howto', 'utf8', function (err,data) {
   if (err) {
     return console.log(err);
   }

@@ -1,0 +1,19 @@
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~Welcome~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~to~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~drie~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    What do to next
+    ---------------
+
+    If it's got a `$` in front, do it in your terminal.
+
+    1. $ echo "5. Start writing your new app!" >> howto.html
+    2. $ git checkout -b $YOUR_NAME-feature
+    3. $ git add -A && git commit -m "Testing a change on drie"
+    4. $ curl $YOUR_NAME-feature.drie-starter-app.next.drie.co
