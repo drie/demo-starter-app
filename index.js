@@ -1,6 +1,8 @@
 var express = require('express')
 var app = express()
 var fs = require('fs')
+var markdown = require( "markdown" ).markdown
+
 fs.readFile('howto', 'utf8', function (err,data) {
   if (err) {
     return console.log(err);
@@ -10,7 +12,7 @@ fs.readFile('howto', 'utf8', function (err,data) {
   app.use(express.static(__dirname + '/public'))
 
   app.get('/', function(request, response) {
-    response.send(data);
+    response.send(markdown.toHTML(data.toString()));
   })
 
   app.listen(app.get('port'), function() {
