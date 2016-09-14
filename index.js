@@ -13,9 +13,14 @@ fs.readFile('howto', 'utf8', function (err,data) {
   app.set('port', (process.env.PORT || 5000))
   app.use(express.static(__dirname + '/public'))
 
-  app.get('/', function(request, response) {
-    response.send(markdown.toHTML(data.toString()));
-  })
+  if req.useragent.browser === "IE"
+    app.get('/', function(request, response) {
+      response.send(data);
+    })
+  else
+    app.get('/', function(request, response) {
+      response.send(markdown.toHTML(data.toString()));
+    })
 
   app.get('/useragent', function(req, res){
           res.send(req.useragent);
