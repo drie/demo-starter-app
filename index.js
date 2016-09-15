@@ -30,7 +30,7 @@ fs.readFile('howto', 'utf8', function (err,data) {
   });
 
   app.listen(app.get('port'), function() {
-    console.log(req.useragent.isCurl + "something") 
+    console.log("Node app is running at localhost:" + app.get('port')) 
   })
 
   console.log(data);
