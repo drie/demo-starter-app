@@ -1,19 +1,20 @@
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    ~~~~~~~~~~~~~Welcome~~~~~~~~~~~~~~
-    ~~~~~~~~~~~~~~~to~~~~~~~~~~~~~~~~~
-    ~~~~~~~~~~~~~~drie~~~~~~~~~~~~~~~~
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~Welcome~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~to~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~drie~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    What do to next
-    ---------------
+What do to next
+---------------
 
-    If it's got a `$` in front, do it in your terminal.
+If it's got a `$` in front, do it in your terminal.
 
-    1. $ echo "5. Start writing your new app!" >> howto.html
-    2. $ git checkout -b $YOUR_NAME-feature
-    3. $ git add -A && git commit -m "Testing a change on drie"
-    4. $ curl $YOUR_NAME-feature.drie-starter-app.next.drie.co
+1. $ echo "6. Start writing your new app!" >> howto
+2. $ git checkout -b feature-x
+3. $ git add -A && git commit -m "Testing a change on drie"
+4. $ git push drie
+5. Visit feature-x.drie-$YOUR_NAME.next.drie.co or $ curl feature-x.drie-$YOUR_NAME.next.drie.co
