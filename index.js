@@ -14,7 +14,7 @@ fs.readFile('howto', 'utf8', function (err,data) {
   app.use(express.static(__dirname + '/public'))
 
   app.use(function(req, res, next) {
-    if (req.useragent.isCurl === "true")
+    if (req.useragent.isCurl === true)
 	  app.get('/', function(request, response) {
        response.send(data);
       });
@@ -30,7 +30,7 @@ fs.readFile('howto', 'utf8', function (err,data) {
   });
 
   app.listen(app.get('port'), function() {
-    console.log("Node app is running at localhost:" + app.get('port'))
+    console.log(req.useragent.isCurl + "something") 
   })
 
   console.log(data);
