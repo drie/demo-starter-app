@@ -14,93 +14,16 @@
 
     If it's got a `$` in front, do it in your terminal.
 
-    1. $ curl -v http://api.nytimes.com/svc/news/v3/content/all/world/24.json?limit=1 | python -m json.tool >> howto
-    2. $ git checkout -b my-new-feature
+    1. Paste the following into your terminal:
+    
+    curl -v http://api.nytimes.com/svc/news/v3/content/all/world/24.       json?limit=1 | python -m json.tool >> howto | awk  'NR==24,NR==150 {$0 =        "     "$0} {print }' howto > howto.old && mv howto.old howto    
+    
+    2. $ git checkout -b todays-top-story
     3. $ git add -A && git commit -m "Testing a change on drie"
     4. $ git push drie
-    5. Visit my-new-feature.drie-$YOUR_NAME.next.drie.co or $ curl my-new-feature.drie-$YOUR_NAME.next.drie.co
+    5. Visit todays-top-story.drie-$YOUR_NAME.next.drie.co or $ curl todays-top-story.drie-$YOUR_NAME.next.drie.co
 
     --------------------------------------------------------------------
-    {
-        "copyright": "Copyright (c) 2016 The New York Times Company.  All Rights Reserved.",
-        "num_results": 32,
-        "results": [
-            {
-                "abstract": "Steven Erlanger, London bureau chief for The New York Times, interviewed the former N.S.A. contractor Edward J. Snowden at the Athens Democracy Forum in Greece via a video stream on Friday.",
-                "byline": "By NEW YORK TIMES CONFERENCES/YOUTUBE",
-                "created_date": "2016-09-16T12:25:06-04:00",
-                "des_facet": [
-                    "Surveillance of Citizens by Government"
-                ],
-                "geo_facet": [
-                    "Russia",
-                    "Athens (Greece)"
-                ],
-                "item_type": "Video",
-                "kicker": "",
-                "material_type_facet": "",
-                "multimedia": [
-                    {
-                        "caption": "",
-                        "copyright": "",
-                        "format": "Standard Thumbnail",
-                        "height": 75,
-                        "subtype": "photo",
-                        "type": "image",
-                        "url": "https://static01.nyt.com/images/2016/09/16/world/snowden-nyt/snowden-nyt-thumbStandard.jpg",
-                        "width": 75
-                    },
-                    {
-                        "caption": "",
-                        "copyright": "",
-                        "format": "Normal",
-                        "height": 107,
-                        "subtype": "photo",
-                        "type": "image",
-                        "url": "https://static01.nyt.com/images/2016/09/16/world/snowden-nyt/snowden-nyt-articleInline.jpg",
-                        "width": 190
-                    },
-                    {
-                        "caption": "",
-                        "copyright": "",
-                        "format": "mediumThreeByTwo210",
-                        "height": 140,
-                        "subtype": "photo",
-                        "type": "image",
-                        "url": "https://static01.nyt.com/images/2016/09/16/world/snowden-nyt/snowden-nyt-mediumThreeByTwo210.jpg",
-                        "width": 210
-                    },
-                    {
-                        "caption": "",
-                        "copyright": "",
-                        "format": "mediumThreeByTwo440",
-                        "height": 293,
-                        "subtype": "photo",
-                        "type": "image",
-                        "url": "https://static01.nyt.com/images/2016/09/16/world/snowden-nyt/snowden-nyt-mediumThreeByTwo440.jpg",
-                        "width": 440
-                    }
-                ],
-                "org_facet": "",
-                "per_facet": [
-                    "Snowden, Edward J"
-                ],
-                "published_date": "2016-09-16T00:00:00-04:00",
-                "related_urls": [
-                    {
-                        "suggested_link_text": "Edward Snowden Says Disclosures Bolstered Individual Privacy",
-                        "url": "http://www.nytimes.com/2016/09/17/world/europe/edward-snowden-defending-his-patriotism-says-disclosures-helped-privacy.html"
-                    }
-                ],
-                "section": "World",
-                "source": "The New York Times",
-                "subheadline": "",
-                "subsection": "Europe",
-                "thumbnail_standard": "https://static01.nyt.com/images/2016/09/16/world/snowden-nyt/snowden-nyt-thumbStandard.jpg",
-                "title": "Edward Snowden Discusses His Legal Status",
-                "updated_date": "2016-09-16T12:25:05-04:00",
-                "url": "http://www.nytimes.com/video/world/europe/100000004652033/edward-snowden-discusses-his-legal-status.html"
-            }
-        ],
-        "status": "OK"
-    }
+
+    Today's top news story
+    ----------------------
