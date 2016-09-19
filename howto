@@ -16,7 +16,7 @@
 
     1. Paste the following into your terminal:
     
-    curl -v http://api.nytimes.com/svc/news/v3/content/all/world/24.       json?limit=1 | python -m json.tool >> howto | awk  'NR==24,NR==150 {$0 =        "     "$0} {print }' howto > howto.old && mv howto.old howto    
+    curl -v http://api.nytimes.com/svc/news/v3/content/all/world/24.json?limit=1 | python -m json.tool >> howto | awk  'NR==24,NR==150 {$0 =        "     "$0} {print }' howto > howto.old && mv howto.old howto    
     
     2. $ git checkout -b todays-top-story
     3. $ git add -A && git commit -m "Testing a change on drie"
