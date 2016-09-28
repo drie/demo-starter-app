@@ -18,4 +18,4 @@
     2. $ git checkout -b my-new-feature
     3. $ git add -A && git commit -m "Testing a change on drie"
     4. $ git push drie
-    5. Visit my-new-feature.drie-$YOUR_NAME.next.drie.co or $ curl my-new-feature.drie-$YOUR_NAME.next.drie.co
+    5. Visit my-new-feature.${APP_NAME}.drieapp.co or $ curl my-new-feature.${APP_NAME}.drieapp.co
