@@ -6,5 +6,5 @@ Do the following:
 2. `git clone git@github.com:drie/demo-starter-app.git`
 3. `cd demo-starter-app`
 4. `git remote add drie git@drieapp.co:${APP_NAME}`
-5. `git push drie`
+5. `git push drie master`
 6. Visit `master.${APP_NAME}.drieapp.co` or `curl master.${APP_NAME}.drieapp.co`

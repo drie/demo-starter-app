@@ -17,5 +17,5 @@
     1. $ echo "    6. Start writing your new app" >> howto
     2. $ git checkout -b my-new-feature
     3. $ git add -A && git commit -m "Testing a change on drie"
-    4. $ git push drie
+    4. $ git push drie my-new-feature
     5. Visit my-new-feature.${APP_NAME}.drieapp.co or $ curl my-new-feature.${APP_NAME}.drieapp.co
