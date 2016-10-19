@@ -4,6 +4,7 @@
 <ol>
   <li>git checkout -b feature-x</li>
   <li>Edit the `content` file in your demo-starter app git repo (try changing "Hello World" to "Hello {your name}")</li>
+  <li>git add content</li>
   <li>git commit -m "Trying a new thing"</li>
   <li>git push drie feature-x</li>
 </ol>
